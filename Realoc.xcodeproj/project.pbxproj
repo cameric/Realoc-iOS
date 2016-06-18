@@ -13,6 +13,10 @@
 		3207A0A11D13909F0008ACEA /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207A0A01D13909F0008ACEA /* MessagesViewController.swift */; };
 		3207A0A41D13909F0008ACEA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3207A0A21D13909F0008ACEA /* MainInterface.storyboard */; };
 		3207A0A61D13909F0008ACEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3207A0A51D13909F0008ACEA /* Assets.xcassets */; };
+		6F753F5C1D1520C300A0F3D4 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F753F5B1D1520C300A0F3D4 /* IntentHandler.swift */; };
+		6F753F671D1520D800A0F3D4 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F753F661D1520D800A0F3D4 /* IntentsUI.framework */; };
+		6F753F6A1D1520D800A0F3D4 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F753F691D1520D800A0F3D4 /* IntentViewController.swift */; };
+		6F753F6D1D1520D800A0F3D4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F753F6B1D1520D800A0F3D4 /* MainInterface.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,14 @@
 		3207A0A31D13909F0008ACEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		3207A0A51D13909F0008ACEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3207A0A71D13909F0008ACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F753F591D1520C300A0F3D4 /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F753F5B1D1520C300A0F3D4 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		6F753F5D1D1520C300A0F3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F753F651D1520D800A0F3D4 /* IntentsUIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsUIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F753F661D1520D800A0F3D4 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		6F753F691D1520D800A0F3D4 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		6F753F6C1D1520D800A0F3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6F753F6E1D1520D800A0F3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F753F561D1520C300A0F3D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F753F621D1520D800A0F3D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F753F671D1520D800A0F3D4 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +95,8 @@
 			children = (
 				3207A0901D13909F0008ACEA /* Realoc */,
 				3207A09F1D13909F0008ACEA /* MessagesExtension */,
+				6F753F5A1D1520C300A0F3D4 /* IntentsExtension */,
+				6F753F681D1520D800A0F3D4 /* IntentsUIExtension */,
 				3207A09C1D13909F0008ACEA /* Frameworks */,
 				3207A08F1D13909F0008ACEA /* Products */,
 			);
@@ -78,6 +107,8 @@
 			children = (
 				3207A08E1D13909F0008ACEA /* Realoc.app */,
 				3207A0981D13909F0008ACEA /* MessagesExtension.appex */,
+				6F753F591D1520C300A0F3D4 /* IntentsExtension.appex */,
+				6F753F651D1520D800A0F3D4 /* IntentsUIExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				3207A09D1D13909F0008ACEA /* Messages.framework */,
+				6F753F661D1520D800A0F3D4 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,6 +140,25 @@
 				3207A0A71D13909F0008ACEA /* Info.plist */,
 			);
 			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		6F753F5A1D1520C300A0F3D4 /* IntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6F753F5B1D1520C300A0F3D4 /* IntentHandler.swift */,
+				6F753F5D1D1520C300A0F3D4 /* Info.plist */,
+			);
+			path = IntentsExtension;
+			sourceTree = "<group>";
+		};
+		6F753F681D1520D800A0F3D4 /* IntentsUIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6F753F691D1520D800A0F3D4 /* IntentViewController.swift */,
+				6F753F6B1D1520D800A0F3D4 /* MainInterface.storyboard */,
+				6F753F6E1D1520D800A0F3D4 /* Info.plist */,
+			);
+			path = IntentsUIExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +198,40 @@
 			productReference = 3207A0981D13909F0008ACEA /* MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
+		6F753F581D1520C300A0F3D4 /* IntentsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F753F601D1520C300A0F3D4 /* Build configuration list for PBXNativeTarget "IntentsExtension" */;
+			buildPhases = (
+				6F753F551D1520C300A0F3D4 /* Sources */,
+				6F753F561D1520C300A0F3D4 /* Frameworks */,
+				6F753F571D1520C300A0F3D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentsExtension;
+			productName = IntentsExtension;
+			productReference = 6F753F591D1520C300A0F3D4 /* IntentsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6F753F641D1520D800A0F3D4 /* IntentsUIExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F753F6F1D1520D800A0F3D4 /* Build configuration list for PBXNativeTarget "IntentsUIExtension" */;
+			buildPhases = (
+				6F753F611D1520D800A0F3D4 /* Sources */,
+				6F753F621D1520D800A0F3D4 /* Frameworks */,
+				6F753F631D1520D800A0F3D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentsUIExtension;
+			productName = IntentsUIExtension;
+			productReference = 6F753F651D1520D800A0F3D4 /* IntentsUIExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +254,18 @@
 						DevelopmentTeamName = "Weiyu Zhou (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
+					6F753F581D1520C300A0F3D4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 92EWH8V794;
+						DevelopmentTeamName = "Weiyu Zhou (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					6F753F641D1520D800A0F3D4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 92EWH8V794;
+						DevelopmentTeamName = "Weiyu Zhou (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 3207A08B1D13909F0008ACEA /* Build configuration list for PBXProject "Realoc" */;
@@ -186,6 +283,8 @@
 			targets = (
 				3207A08D1D13909F0008ACEA /* Realoc */,
 				3207A0971D13909F0008ACEA /* MessagesExtension */,
+				6F753F581D1520C300A0F3D4 /* IntentsExtension */,
+				6F753F641D1520D800A0F3D4 /* IntentsUIExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +307,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F753F571D1520C300A0F3D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F753F631D1520D800A0F3D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F753F6D1D1520D800A0F3D4 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,6 +330,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3207A0A11D13909F0008ACEA /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F753F551D1520C300A0F3D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F753F5C1D1520C300A0F3D4 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F753F611D1520D800A0F3D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F753F6A1D1520D800A0F3D4 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +364,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				3207A0A31D13909F0008ACEA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		6F753F6B1D1520D800A0F3D4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F753F6C1D1520D800A0F3D4 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -380,6 +518,54 @@
 			};
 			name = Release;
 		};
+		6F753F5E1D1520C300A0F3D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cameric.IntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6F753F5F1D1520C300A0F3D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cameric.IntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6F753F701D1520D800A0F3D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IntentsUIExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cameric.IntentsUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6F753F711D1520D800A0F3D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IntentsUIExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cameric.IntentsUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,12 +585,30 @@
 				3207A0AC1D13909F0008ACEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3207A0AE1D13909F0008ACEA /* Build configuration list for PBXNativeTarget "Realoc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3207A0AF1D13909F0008ACEA /* Debug */,
 				3207A0B01D13909F0008ACEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F753F601D1520C300A0F3D4 /* Build configuration list for PBXNativeTarget "IntentsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F753F5E1D1520C300A0F3D4 /* Debug */,
+				6F753F5F1D1520C300A0F3D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F753F6F1D1520D800A0F3D4 /* Build configuration list for PBXNativeTarget "IntentsUIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F753F701D1520D800A0F3D4 /* Debug */,
+				6F753F711D1520D800A0F3D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
