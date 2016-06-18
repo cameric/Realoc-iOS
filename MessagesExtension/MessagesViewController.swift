@@ -43,6 +43,7 @@ class MessagesViewController: MSMessagesAppViewController, CLLocationManagerDele
     
     /// MARK: Messanger Delegate
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
+        super.didTransition(to: presentationStyle)
         switch presentationStyle {
         case .compact:
             mapView.isUserInteractionEnabled = false
@@ -56,6 +57,7 @@ class MessagesViewController: MSMessagesAppViewController, CLLocationManagerDele
     /// MARK: Views
     func setupMapView() {
         mapView.showsUserLocation = true
+        mapView.isUserInteractionEnabled = false
         mapView.showsCompass = true
         mapView.userTrackingMode = .follow
     }
